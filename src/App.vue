@@ -56,7 +56,7 @@ export default {
       item.isVisible() ? item.hide() : item.show();
     },
     async carregar() {
-      const { data } = await api.get("records/LATEST?disableRedirect=true");
+      const { data } = await api.get("");
       this.areas = data.infectedByRegion;
     }
   },
